@@ -1,0 +1,9 @@
+project: lzma
+target: 7z_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/7z_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/7z_fuzzer
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/7z_fuzzer.dict

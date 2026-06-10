@@ -1,0 +1,8 @@
+project: lzma
+target: lzma2dec_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/lzma2dec_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/lzma2dec_fuzzer
+    libfuzzer: true
